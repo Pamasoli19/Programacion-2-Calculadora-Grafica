@@ -10,9 +10,9 @@ package calculadora_grafica;
  * @author Pablo
  */
 public class Calculadora_Form extends javax.swing.JFrame {
-    String memoria1;//Declaración de String para Primer Dato Numérico
-    String signo;//Declaración de String para Operación Matemática
-    String memoria2;//Declaración de String para Segundo Dato Numérico
+    String dato1;//Declaración de String para Primer Dato Numérico
+    String operacion;//Declaración de String para Operación Matemática
+    String dato2;//Declaración de String para Segundo Dato Numérico
     public Calculadora_Form() {
         initComponents();
     }
@@ -442,11 +442,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         for (int i = 0; i < cadena.length(); i++) {
             if (cadena.substring(i, i+1).equals(".")) {
                 resultado=true;
-                break;
-                
-                
-                
-                
+                break;     
             }
             
         }
@@ -457,10 +453,10 @@ public class Calculadora_Form extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
         String resultado;
-        memoria2=txtpantalla.getText();
+        dato2=txtpantalla.getText();
 
-        if (!memoria2.equals("")) {
-            resultado=calculadora(memoria1,memoria2,signo);
+        if (!dato2.equals("")) {
+            resultado=calculadora(dato1,dato2,operacion);
             txtpantalla.setText(resultado);
         }
     }//GEN-LAST:event_jButton18ActionPerformed
@@ -522,8 +518,8 @@ public class Calculadora_Form extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
         if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="-";
+            dato1=txtpantalla.getText();
+            operacion="-";
             txtpantalla.setText("");
         }
     }//GEN-LAST:event_jButton13ActionPerformed
@@ -531,8 +527,8 @@ public class Calculadora_Form extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
         if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="/";
+            dato1=txtpantalla.getText();
+            operacion="/";
             txtpantalla.setText("");
         }
     }//GEN-LAST:event_jButton14ActionPerformed
@@ -540,8 +536,8 @@ public class Calculadora_Form extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
         if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="*";
+            dato1=txtpantalla.getText();
+            operacion="*";
             txtpantalla.setText("");
         }
     }//GEN-LAST:event_jButton15ActionPerformed
@@ -549,8 +545,8 @@ public class Calculadora_Form extends javax.swing.JFrame {
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here
         if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="+";
+            dato1=txtpantalla.getText();
+            operacion="+";
             txtpantalla.setText("");
         }
     }//GEN-LAST:event_jButton16ActionPerformed
