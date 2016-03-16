@@ -10,9 +10,9 @@ package calculadora_grafica;
  * @author Pablo
  */
 public class Calculadora_Form extends javax.swing.JFrame {
-    String memoria1;
-    String signo;
-    String memoria2;
+    String memoria1;//Declaración de String para Primer Dato Numérico
+    String signo;//Declaración de String para Operación Matemática
+    String memoria2;//Declaración de String para Segundo Dato Numérico
     public Calculadora_Form() {
         initComponents();
     }
@@ -165,7 +165,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         txtpantalla.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jButton21.setBackground(new java.awt.Color(218, 233, 248));
-        jButton21.setFont(new java.awt.Font("Calibri", 0, 15)); // NOI18N
+        jButton21.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton21.setText("MC");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,7 +183,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         });
 
         jButton22.setBackground(new java.awt.Color(218, 233, 248));
-        jButton22.setFont(new java.awt.Font("Calibri", 0, 15)); // NOI18N
+        jButton22.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton22.setText("MR");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,7 +201,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         });
 
         jButton23.setBackground(new java.awt.Color(218, 233, 248));
-        jButton23.setFont(new java.awt.Font("Calibri", 0, 15)); // NOI18N
+        jButton23.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton23.setText("MS");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,7 +228,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         });
 
         jButton24.setBackground(new java.awt.Color(218, 233, 248));
-        jButton24.setFont(new java.awt.Font("Calibri", 0, 15)); // NOI18N
+        jButton24.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton24.setText("M+");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -237,7 +237,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
         });
 
         jButton25.setBackground(new java.awt.Color(218, 233, 248));
-        jButton25.setFont(new java.awt.Font("Calibri", 0, 15)); // NOI18N
+        jButton25.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton25.setText("M-");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
