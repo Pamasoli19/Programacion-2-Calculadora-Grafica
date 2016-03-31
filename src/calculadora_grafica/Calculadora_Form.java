@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package calculadora_grafica;
 
+package calculadora_grafica;
 /**
  *
  * @author Pablo
@@ -410,32 +405,23 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     public static String calculadora(String memoria1,String memoria2,String signo){
     Double resultado=0.0;
-    String respuesta;
-    
-    
-    if (signo.equals("-")) {
-        resultado=Double.parseDouble(memoria1)-Double.parseDouble(memoria2);
-        
+    String respuesta;   
+    if (signo.equals("-")) {//Declaración de código para operación de resta
+        resultado=Double.parseDouble(memoria1)-Double.parseDouble(memoria2);      
     }
-    if (signo.equals("+")) {
-        resultado=Double.parseDouble(memoria1)+Double.parseDouble(memoria2);
-        
+    if (signo.equals("+")) {//Declaración de código para operación de suma
+        resultado=Double.parseDouble(memoria1)+Double.parseDouble(memoria2);       
     }
-    if (signo.equals("*")) {
-        resultado=Double.parseDouble(memoria1)*Double.parseDouble(memoria2);
-        
+    if (signo.equals("*")) {//Declaración de código para operación de multiplicación
+        resultado=Double.parseDouble(memoria1)*Double.parseDouble(memoria2);    
     }
-    if (signo.equals("/")) {
-        resultado=Double.parseDouble(memoria1)/Double.parseDouble(memoria2);
-        
+    if (signo.equals("/")) {//Declaración de código para operación de división
+        resultado=Double.parseDouble(memoria1)/Double.parseDouble(memoria2);    
     }
-    
-    respuesta=resultado.toString();
+    respuesta=resultado.toString();//Declaración de código para devolver respuesta de operación
     return respuesta;
-}
-  
-  
-    public static boolean existepunto(String cadena){
+} 
+    public static boolean existepunto(String cadena){//Declaración de código para incersión y uso de punto
         boolean resultado;
         resultado=false;
         
@@ -443,15 +429,12 @@ public class Calculadora_Form extends javax.swing.JFrame {
             if (cadena.substring(i, i+1).equals(".")) {
                 resultado=true;
                 break;     
-            }
-            
+            } 
         }
-        return resultado;
-        
-                
+        return resultado;//Declaración de código para devolver respuesta de operación
     }
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
+     // Declaración de código para escrivir dtos y operaion en textbox o pantalla
         String resultado;
         dato2=txtpantalla.getText();
 
@@ -462,24 +445,23 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 5 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"5");
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de String cadena, Double num, y su respectivo parseado (toString)
         String cadena;
         Double num;
         cadena=txtpantalla.getText();
         if (cadena.length()>0) {
             num=1/(Double.parseDouble(cadena));
             txtpantalla.setText(num.toString());
-
         }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 3 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"3");
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -489,7 +471,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para decimalescon condiciones If y else
         String cadena;
         cadena=txtpantalla.getText();
 
@@ -500,7 +482,6 @@ public class Calculadora_Form extends javax.swing.JFrame {
         else{
             if (!existepunto(txtpantalla.getText())) {
                 txtpantalla.setText(txtpantalla.getText()+".");
-
             }
         }
     }//GEN-LAST:event_jButton10ActionPerformed
@@ -556,7 +537,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 1 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"1");
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -565,7 +546,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 4 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"4");
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -574,12 +555,12 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 7 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"7");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 0 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"0");
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -592,7 +573,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 2 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"2");
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -623,7 +604,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+        // Declaración de código para creación de botón con número 8 y su puesta en textbox o Pantalla
         txtpantalla.setText(txtpantalla.getText()+"8");
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -661,7 +642,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
             }
         });
     }
-
+    //Declaración de variables
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
