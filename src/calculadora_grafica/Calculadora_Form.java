@@ -450,14 +450,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // Declaración de código para creación de String cadena, Double num, y su respectivo parseado (toString)
-        String cadena;
-        Double num;
-        cadena=txtpantalla.getText();
-        if (cadena.length()>0) {
-            num=1/(Double.parseDouble(cadena));
-            txtpantalla.setText(num.toString());
-        }
+  
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -583,13 +576,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        Double num;
-        String cadena;
-        cadena=txtpantalla.getText();
-        if (cadena.length()>0) {
-            num=(-1)*Double.parseDouble(cadena);
-            txtpantalla.setText(num.toString());
-        }
+
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -612,11 +599,7 @@ public class Calculadora_Form extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
